@@ -586,13 +586,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"gLLPy":[function(require,module,exports) {
 var _room = require("@skyway-sdk/room");
 let token;
-const tokenButton = document.createElement("button"); // 3-1
-tokenButton.textContent = `login`;
+const tokenButton = document.getElementById("button-token");
 tokenButton.onclick = async ()=>{
     const id = document.getElementById("app-id").value;
     const secretKey = document.getElementById("secret-key").value;
+    const myToken = document.getElementById("my-token");
     if (id === "" || secretKey === "") return;
     token = createToken(id, secretKey);
+    myToken.textContent = token;
 };
 const createToken = (id, secretKey)=>{
     return new (0, _room.SkyWayAuthToken)({
