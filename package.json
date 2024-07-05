@@ -1,0 +1,27 @@
+{
+  "name": "skyway-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe-king-sh/skyway-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joe-king-sh/skyway-example/issues"
+  },
+  "homepage": "https://github.com/joe-king-sh/skyway-example#readme",
+  "dependencies": {
+    "@skyway-sdk/room": "^1.9.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0"
+  }
+}
